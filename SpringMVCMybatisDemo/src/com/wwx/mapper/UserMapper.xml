@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 这个文件中编写sql语句 -->
+<!-- xml 可以作为配置文件。 -->
+<mapper namespace="com.wwx.mapper.UserMapper">
+	<!-- 要在mapper标签内部编写sql -->
+	<!-- 在select 标签内部 编写sql语句 -->
+	<!-- resultType 表示将结果集封装成什么对象。写类的全路径 -->
+	<select id="queryUserByLoginUser" parameterType="com.wwx.bean.User"
+		resultType="com.wwx.bean.User">
+		select * from users where
+		username=#{username} and
+		password=#{password}
+	</select>
+</mapper>
+
