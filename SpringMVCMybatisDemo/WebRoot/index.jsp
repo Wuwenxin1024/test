@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
   </head>
   
-  <body style="text-align: center;">
+  <body style="text-align: center; margin-top: 100">
   <h1>欢迎来到大表锅测试主页</h1>
   <form action="${pageContext.request.contextPath }/user/userLogin.action" method="get">
     <h1>
