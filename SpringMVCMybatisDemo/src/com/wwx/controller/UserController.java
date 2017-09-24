@@ -24,7 +24,6 @@ public class UserController {
 			modelAndView.setViewName("loginfail");
 			String url = "index.jsp";
 			modelAndView.addObject("url", url);
-			System.out.println("登录失败");
 			return modelAndView;
 		}
 		else {
